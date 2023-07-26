@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<otrs_config version="2.0" init="Config">
+    <Setting Name="PostMaster::PreFilterModule###4-PhoneNumberRecognition" Required="0" Valid="1">
+        <Description Translatable="1">Recognize if a email contains phone number in it.</Description>
+        <Navigation>Core::Email::PostMaster</Navigation>
+        <Value>
+            <Hash>
+                <Item Key="Module">Kernel::System::PostMaster::Filter::PhoneNumberRecognition</Item>
+                <Item Key="Name">Phone Number Recognition</Item>
+                <Item Key="FromAddressRegExp">external-system@example.com</Item>
+                <Item Key="NumberRegExp">\s*PhoneNumber: (\d.*)\s*</Item>
+                <Item Key="SearchInBody">1</Item>
+            </Hash>
+        </Value>
+    </Setting>
+</otrs_config>

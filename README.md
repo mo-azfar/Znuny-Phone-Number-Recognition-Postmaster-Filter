@@ -1,2 +1,4 @@
 # Znuny Phone Number Recognition Postmaster Filter
- Recognize phone number in mail body and set customer user based on registered phone number
+- Recognize phone number in mail body and set customer user based on registered phone number
+- Based on Znuny 7.0.x
+
