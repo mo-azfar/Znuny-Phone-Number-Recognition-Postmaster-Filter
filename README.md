@@ -19,3 +19,5 @@ Situation:
 		PhoneNumber: 0123456789
 		
 4. Make sure customer user profile field Mobile has a value in it.		
+
+![mail-log](phone-number-recognition.png)
