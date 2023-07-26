@@ -15,6 +15,7 @@ use warnings;
 
 our @ObjectDependencies = (
     'Kernel::Config',
+	'Kernel::System::CustomerUser',
 );
 
 sub new {
@@ -97,7 +98,7 @@ sub Run {
         );
     }
 
-	my $CustomerUserObject = $Kernel::OM->Get('Kernel::System::CustomerUser');
+	my $CustomerUserObject =  $Kernel::OM->Get('Kernel::System::CustomerUser');
 	
 	#search customer data based on phone number
 	my $CustomerUserIDsRef = $CustomerUserObject->CustomerSearchDetail(
